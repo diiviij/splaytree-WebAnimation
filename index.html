@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,45 +26,33 @@
     <title>Splay Tree Visualizations</title>
   </head>
   <body>
-
-   
-
 <!-- Page Content -->
-<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
- <div id="nav">
-<div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Close &times;</button>
-   <ul>
-    <li><a onclick="StartRotateAnimation()" href="#">Rotation</a></li>
-        <li><a onclick="StartMoveToRootAnimation()" href="#">Move To Root</a></li>
-        <li><a onclick="StartMoveToRoot2Animation()" href="#">Move To Root 2</a></li>
-        <li><a onclick="StartZigZigAnimation()" href="#">Zig-Zig</a></li>
-        <li><a onclick="StartMoveToRootZigZigAnimation()" href="#">M2R Zig-Zig</a></li>
-        <li><a onclick="StartZigZagAnimation()" href="#">Zig-Zag</a></li>
-        <li><a onclick="StartSplayLinearAnimation()" href="#">Splay Linear Tree</a></li>
-        <li><a onclick="StartSplayZigZagAnimation()" href="#">Splay ZigZag Tree</a></li>
-      </ul>
-
-
-</div>
-
-<div>
-  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+ 
+        <a onclick="StartRotateAnimation()" class="w3-bar-item w3-button">Rotation</a>
+        <a onclick="StartMoveToRootAnimation()" class="w3-bar-item w3-button">Move To Root</a>
+        <a onclick="StartMoveToRoot2Animation()" class="w3-bar-item w3-button">Move To Root 2</a>
+        <a onclick="StartZigZigAnimation()" class="w3-bar-item w3-button">Zig-Zig</a>
+        <a onclick="StartMoveToRootZigZigAnimation()" class="w3-bar-item w3-button">M2R Zig-Zig</a>
+        <a onclick="StartZigZagAnimation()" class="w3-bar-item w3-button">Zig-Zag</a>
+        <a onclick="StartSplayLinearAnimation()" class="w3-bar-item w3-button">Splay Linear Tree</a>
+        <a onclick="StartSplayZigZagAnimation()" class="w3-bar-item w3-button">Splay ZigZag Tree</a>
      
-      
+    </div>
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+</div>    <div><br><br><br><br></div>
 
-</div>
     <div id="cy"></div>
-     
+
 <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
 }
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
 }
 </script>
   </body>
